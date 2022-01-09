@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS tech_talk;
+
+CREATE DATABASE tech_talk;
