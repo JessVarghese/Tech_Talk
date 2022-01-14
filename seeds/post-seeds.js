@@ -1,18 +1,18 @@
 const { Post } = require('../models');
 
-const postdata = [
+const postData = [
   {
-    title: 'Donec posuere metus vitae ipsum.',
-    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    title: '5 predictions for bitcoin, NFTs and the future of money',
+    post_url: 'https://www.cnet.com/personal-finance/crypto/5-predictions-for-bitcoin-nfts-and-the-future-of-money/',
     user_id: 1
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_url: 'https://nasa.gov/donec.json',
+    title: 'iPhone 14 design rumors: Buh-bye, notch; hello, hole and pill cutouts',
+    post_url: 'https://www.cnet.com/tech/mobile/iphone-14-design-rumors/',
     user_id: 2
   }
 ];
 
-const seedPosts = () => Post.bulkCreate(postdata);
+const seedPosts = () => Post.bulkCreate(postData);
 
 module.exports = seedPosts;

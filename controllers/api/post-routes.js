@@ -89,15 +89,15 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
-router.put('/like', withAuth, (req, res) => {
-  // custom static method created in models/Post.js
-  Post.like({ ...req.body, user_id: req.session.user_id }, { Like, Comment, User })
-    .then(updatedLikeData => res.json(updatedLikeData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+// router.put('/like', withAuth, (req, res) => {
+//   // custom static method created in models/Post.js
+//   Post.like({ ...req.body, user_id: req.session.user_id }, { Comment, User })
+//     .then(updatedLikeData => res.json(updatedLikeData))
+//     .catch(err => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
 
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
