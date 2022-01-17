@@ -1,3 +1,8 @@
+
+const path = require('path');
+const express = require('express');
+const session = require('express-session');
+
 const router = require('express').Router();
 const apiRoutes = require('./controllers/api/');
 const homeRoutes = require('./controllers/home-routes');
@@ -5,9 +10,7 @@ const dashboardRoutes = require('./controllers/dashboard-routes');
 router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
 
-const path = require('path');
-const express = require('express');
-const session = require('express-session');
+
 
 const exphbs = require('express-handlebars');
 

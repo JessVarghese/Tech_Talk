@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
     try {
       const dbUserData = await User.findOne({
         where: {
-          email: req.body.username,
+          username: req.body.username,
         },
       });
   
@@ -58,10 +58,7 @@ router.post('/', async (req, res) => {
     }
   });
   
-  // Put after router.get
-  // else if(res.status === 400 ) {
-  // window.alert('Incorrect Password')
-  // }
+ 
   // Logout
   router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {

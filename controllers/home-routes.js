@@ -93,7 +93,6 @@ router.get('/login', (req, res) => {
     res.redirect('/');
     return;
   }
-
   res.render('login');
 });
 
