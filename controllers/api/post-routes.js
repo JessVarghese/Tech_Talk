@@ -4,7 +4,7 @@ const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utilis/auth')
 
 // get all users
-router.get('/', (req, res) => {
+router.get('/users', (req, res) => {
   console.log('======================');
   Post.findAll({
     attributes: [
