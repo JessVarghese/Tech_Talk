@@ -28,7 +28,8 @@
  ## Visuals
 
  <img src="./assets/login.png" width="500"/>
- <img src="./assets/cat_homepage.png" width="500"/>
+ <img src="./assets/blog_posts.png" width="500"/>
+ <img src="./assets/create_new_post.png" width="500"/>
 
   ## License
   This project operates under the [MIT](https://choosealicense.com/licenses/MIT/) license.
@@ -49,4 +50,4 @@
 
 ## Questions
   If you have any questions about the repo, open and issue:
-  * Github: https://github.com/Chis517/cat-mom-dotcom
+  * Github: https://github.com/JessVarghese/Tech_Talk
